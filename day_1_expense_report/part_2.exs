@@ -1,7 +1,6 @@
 "input.txt"
 |> File.read!()
 |> String.split("\n")
-|> Enum.reject(& &1 == "")
 |> Enum.map(&String.to_integer/1)
 # I'm willing to bet that because there are 3 numbers, the high end of this list won't have
 # the solution.
